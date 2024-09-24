@@ -1,0 +1,43 @@
+/* Centralizar o conteúdo da página */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1, h2 {
+    margin: 10px;
+}
+
+/* Contêiner para as casas do jogo */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+button {
+    border: 6px solid #000;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    font-size: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:disabled {
+    border-color: black;
+}
+
+/* Ajusta o título do resultado */
+#resultado {
+    margin-top: 20px;
+    font-size: 24px;
+}
